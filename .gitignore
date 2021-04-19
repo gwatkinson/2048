@@ -122,7 +122,7 @@ target/
 #Pipfile.lock
 
 # poetry
-poetry.lock
+# poetry.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
@@ -178,7 +178,7 @@ Thumbs.db
 
 ### vscode ###
 .vscode/*
-!.vscode/settings.json
+.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
