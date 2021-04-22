@@ -146,18 +146,6 @@ class App(Game):
                 self.iterate(direction=0)
             elif event.key == pg.K_DOWN:
                 self.iterate(direction=1)
-        # elif event.type == pg.KEYUP:
-        #     if event.key == pg.K_LEFT:
-        #         pass
-        #     elif event.key == pg.K_RIGHT:
-        #         pass
-        #     if event.key == pg.K_UP:
-        #         pass
-        #     elif event.key == pg.K_DOWN:
-        #         pass
-
-    def on_loop(self):
-        pass
 
     def on_render(self):
         # Draw background and grid
@@ -187,12 +175,9 @@ class App(Game):
             self.on_render()
             for event in pg.event.get():
                 self.on_event(event)
-            self.on_loop()
         self.on_cleanup()
 
 
 if __name__ == "__main__":
-    import numpy as np
-
-    theApp = App(board=np.reshape(np.array([0] + [2 ** i for i in range(1, 16)]), (4, 4)))
+    theApp = App()
     theApp.on_execute()
